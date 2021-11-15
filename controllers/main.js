@@ -11,6 +11,7 @@ getElm("ao").addEventListener("click", () => {
         var ao = result.data[i].type;
         if (ao === "topclothes") {
           dessing.push(result.data[i]);
+          console.log(result.data[i]);
           renderData(dessing);
         }
       }
@@ -30,6 +31,7 @@ getElm("quan").addEventListener("click", () => {
         var ao = result.data[i].type;
         if (ao === "botclothes") {
           dessing.push(result.data[i]);
+          console.log(result.data[i]);
           renderData(dessing);
         }
       }
@@ -48,6 +50,7 @@ getElm("giayDep").addEventListener("click", () => {
         var ao = result.data[i].type;
         if (ao === "shoes") {
           dessing.push(result.data[i]);
+          console.log(result.data[i]);
           renderData(dessing);
         }
       }
@@ -66,6 +69,7 @@ getElm("tuiXach").addEventListener("click", () => {
         var ao = result.data[i].type;
         if (ao === "handbags") {
           dessing.push(result.data[i]);
+          console.log(result.data[i]);
           renderData(dessing);
         }
       }
@@ -84,6 +88,7 @@ getElm("dayChuyen").addEventListener("click", () => {
         var ao = result.data[i].type;
         if (ao === "necklaces") {
           dessing.push(result.data[i]);
+          console.log(result.data[i]);
           renderData(dessing);
         }
       }
@@ -102,6 +107,7 @@ getElm("styleHair").addEventListener("click", () => {
         var ao = result.data[i].type;
         if (ao === "hairstyle") {
           dessing.push(result.data[i]);
+          console.log(result.data[i]);
           renderData(dessing);
         }
       }
@@ -120,6 +126,7 @@ getElm("background").addEventListener("click", () => {
         var ao = result.data[i].type;
         if (ao === "background") {
           dessing.push(result.data[i]);
+          console.log(result.data[i]);
           renderData(dessing);
         }
       }
@@ -172,7 +179,7 @@ function renderData(mangDR) {
         <div class="card">
         <div class="blog__item">
           <img
-            src=""../assets/images/clothes/topcloth1_show.jpg""
+            src="../assets/images/clothes/topcloth6_show.jpg"
             class="card-img-top"
             alt="..."
           />
