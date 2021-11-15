@@ -179,7 +179,7 @@ function renderData(mangDR) {
         <div class="card">
         <div class="blog__item">
           <img
-            src="../assets/images/clothes/topcloth6_show.jpg"
+            src="./assets/images/clothes/topcloth6_show.jpg"
             class="card-img-top"
             alt="..."
           />
