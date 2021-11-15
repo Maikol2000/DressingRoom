@@ -1,4 +1,5 @@
 const callData = new CallData();
+// console.log(callData);
 const getElm = (id) => document.getElementById(id);
 
 getElm("ao").addEventListener("click", () => {
@@ -11,7 +12,6 @@ getElm("ao").addEventListener("click", () => {
         var ao = result.data[i].type;
         if (ao === "topclothes") {
           dessing.push(result.data[i]);
-          console.log(result.data[i]);
           renderData(dessing);
         }
       }
@@ -31,7 +31,6 @@ getElm("quan").addEventListener("click", () => {
         var ao = result.data[i].type;
         if (ao === "botclothes") {
           dessing.push(result.data[i]);
-          console.log(result.data[i]);
           renderData(dessing);
         }
       }
@@ -50,7 +49,6 @@ getElm("giayDep").addEventListener("click", () => {
         var ao = result.data[i].type;
         if (ao === "shoes") {
           dessing.push(result.data[i]);
-          console.log(result.data[i]);
           renderData(dessing);
         }
       }
@@ -69,7 +67,6 @@ getElm("tuiXach").addEventListener("click", () => {
         var ao = result.data[i].type;
         if (ao === "handbags") {
           dessing.push(result.data[i]);
-          console.log(result.data[i]);
           renderData(dessing);
         }
       }
@@ -88,7 +85,6 @@ getElm("dayChuyen").addEventListener("click", () => {
         var ao = result.data[i].type;
         if (ao === "necklaces") {
           dessing.push(result.data[i]);
-          console.log(result.data[i]);
           renderData(dessing);
         }
       }
@@ -107,7 +103,6 @@ getElm("styleHair").addEventListener("click", () => {
         var ao = result.data[i].type;
         if (ao === "hairstyle") {
           dessing.push(result.data[i]);
-          console.log(result.data[i]);
           renderData(dessing);
         }
       }
@@ -126,7 +121,6 @@ getElm("background").addEventListener("click", () => {
         var ao = result.data[i].type;
         if (ao === "background") {
           dessing.push(result.data[i]);
-          console.log(result.data[i]);
           renderData(dessing);
         }
       }
@@ -174,12 +168,12 @@ function topCloth(type, imgSrc_png) {
 }
 function renderData(mangDR) {
   var content = "";
-  mangDR.forEach(function (dessing) {
+  mangDR.forEach(function (dessing, index) {
     content += `
         <div class="card">
         <div class="blog__item">
           <img
-            src="./assets/images/clothes/topcloth6_show.jpg"
+            src="${dessing.imgSrc_jpg}"
             class="card-img-top"
             alt="..."
           />
