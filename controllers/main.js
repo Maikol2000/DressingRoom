@@ -1,5 +1,4 @@
 const callData = new CallData();
-// console.log(callData);
 const getElm = (id) => document.getElementById(id);
 
 getElm("ao").addEventListener("click", () => {
@@ -168,12 +167,13 @@ function topCloth(type, imgSrc_png) {
 }
 function renderData(mangDR) {
   var content = "";
-  mangDR.forEach(function (dessing, index) {
+  mangDR.forEach(function (dessing) {
     content += `
         <div class="card">
         <div class="blog__item">
           <img
-            src="${dessing.imgSrc_jpg}"
+            // src="${dessing.imgSrc_jpg}"
+            src=""../assets/images/clothes/topcloth1_show.jpg""
             class="card-img-top"
             alt="..."
           />
