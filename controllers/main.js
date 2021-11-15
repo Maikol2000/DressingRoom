@@ -172,7 +172,6 @@ function renderData(mangDR) {
         <div class="card">
         <div class="blog__item">
           <img
-            // src="${dessing.imgSrc_jpg}"
             src=""../assets/images/clothes/topcloth1_show.jpg""
             class="card-img-top"
             alt="..."
