@@ -1,5 +1,5 @@
 const callData = new CallData();
-// console.log(callData);
+
 const getElm = (id) => document.getElementById(id);
 
 getElm("ao").addEventListener("click", () => {
