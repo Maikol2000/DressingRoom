@@ -57,9 +57,7 @@
   width: 127%;
   max-width: 127%;
 }
-button{
-  border-radius: 0 !important;
-}
+
 .card-body .card-text {
   text-align: center;
   font-weight: 800;
@@ -178,4 +176,10 @@ hr {
 .card {
   border: none;
   padding-top: 30px;
+}
+
+.list-group {
+  display: flex !important;
+  flex-direction: row;
+  text-align: center;
 }

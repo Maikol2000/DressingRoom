@@ -19,6 +19,7 @@
 
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
+
   <body>
     <div class="container-fluid">
       <div class="row">
@@ -38,68 +39,112 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-8 container">
-          <ul class="nav nav-pills row">
-            <li class="col">
-              <button id="ao" type="menu" class="btn btn-outline-primary col">
-                Áo
-              </button>
-            </li>
-            <li class="col">
-              <button id="quan" type="menu" class="btn btn-outline-primary col">
-                Quần
-              </button>
-            </li>
-            <li class="col">
-              <button
-                id="giayDep"
-                type="menu"
-                class="btn btn-outline-primary col"
-              >
-                Giầy dép
-              </button>
-            </li>
-            <li class="col">
-              <button
-                id="tuiXach"
-                type="menu"
-                class="btn btn-outline-primary col"
-              >
-                Túi xách
-              </button>
-            </li>
-            <li class="col">
-              <button
-                id="dayChuyen"
-                type="menu"
-                class="btn btn-outline-primary col"
-              >
-                Dây chuyền
-              </button>
-            </li>
-            <li class="col">
-              <button
-                id="styleHair"
-                type="menu"
-                class="btn btn-outline-primary col"
-              >
-                Kiểu tóc
-              </button>
-            </li>
-            <li class="col">
-              <button
-                id="background"
-                type="menu"
-                class="btn btn-outline-primary col"
-              >
-                Nền
-              </button>
-            </li>
-          </ul>
+        <div class="col-md-8" id="list-tab" role="tablist">
+          <div class="list-group">
+            <a
+              id="ao"
+              type="menu"
+              class="
+                btn btn-outline-primary
+                list-group-item list-group-item-action
+                active
+              "
+              data-toggle="list"
+              href="#list-ao"
+              role="tab"
+              aria-controls="ao"
+            >
+              Áo
+            </a>
+            <a
+              id="quan"
+              type="menu"
+              class="
+                btn btn-outline-primary
+                list-group-item list-group-item-action
+              "
+              data-toggle="list"
+              href="#list-quan"
+              role="tab"
+              aria-controls="quan"
+            >
+              Quần
+            </a>
+            <a
+              id="giayDep"
+              type="menu"
+              class="
+                btn btn-outline-primary
+                list-group-item list-group-item-action
+              "
+              data-toggle="list"
+              href="#list-giayDep"
+              role="tab"
+              aria-controls="giayDep"
+            >
+              Giầy dép
+            </a>
+            <a
+              id="tuiXach"
+              type="menu"
+              class="
+                btn btn-outline-primary
+                list-group-item list-group-item-action
+              "
+              data-toggle="list"
+              href="#list-tuiXach"
+              role="tab"
+              aria-controls="tuiXach"
+            >
+              Túi xách
+            </a>
+            <a
+              id="dayChuyen"
+              type="menu"
+              class="
+                btn btn-outline-primary
+                list-group-item list-group-item-action
+              "
+              data-toggle="list"
+              href="#list-dayChuyen"
+              role="tab"
+              aria-controls="dayChuyen"
+            >
+              Dây chuyền
+            </a>
+            <a
+              id="styleHair"
+              type="menu"
+              class="
+                btn btn-outline-primary
+                list-group-item list-group-item-action
+              "
+              data-toggle="list"
+              href="#list-styleHair"
+              role="tab"
+              aria-controls="styleHair"
+            >
+              Kiểu tóc
+            </a>
+            <a
+              id="background"
+              type="menu"
+              class="
+                btn btn-outline-primary
+                list-group-item list-group-item-action
+              "
+              id="list-messages-list"
+              data-toggle="list"
+              href="#list-messages"
+              role="tab"
+              aria-controls="messages"
+            >
+              Nền
+            </a>
+          </div>
           <div class="well">
-            <div class="tab-content">
-              
-            </div>
+            <!-- Tab panes -->
+            <div class="tab-content"></div>
           </div>
         </div>
         <div class="col-md-4">
